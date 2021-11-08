@@ -1,34 +1,43 @@
 <!doctype html>
 <html>
+
 <head>
- <meta charset="utf-8">
+  <meta charset="utf-8">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yanone+Kaffeesatz:wght@248;300;446&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="/main page/orgenizer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yanone+Kaffeesatz:wght@248;300;446&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./orgenizer.css">
 </head>
+
 <body>
-  <button class="buttOpenSB" onclick="closeNav()">☰ </button> 
+  <button class="buttOpenSB" onclick="closeNav()">☰ </button>
   <div class="SideBar">
-    <a class="Link" href="simple_list.html">list</a>
-    <a class="Link" href="motivation page/motivation.html">motivation</a>
-    <a class="Link" href="jurnal page/jurnal.html">jurnal</a>
+    <a class="Link" href="./list/simple_list.html">list</a>
+    <a class="Link" href="./motivation page/motivation.html">motivation</a>
+    <a class="Link" href="./jurnal page/jurnal.html">jurnal</a>
   </div>
-   
+
   <h1 id="title">orgenizer</h1>
-<div class="main-discription">
-  <h3 id="description">hello, this is your orgenizer :-) <br> you can have here your own list and your own jurnal <br> and we also included a cute motivation pictures to lighen your day <br> give it a try,  hope you like it!  <br><br>would you like to start? :</h3>
- 
-  <div id="buttonFlex">
-  <button id="buttonList" class="buttons"> create your list </button> <br> <br>
-  <button id="buttonPage" class="buttons"> create your jurnal </button> <br> <br>
-  <button id="buttonAPI" class="buttons"> need some motivation? </button> 
+  <div class="main-discription">
+    <h3 id="description">hello, this is your orgenizer :-) <br> you can have here your own list and your own jurnal <br>
+      and we also included a cute motivation pictures to lighen your day <br> give it a try, hope you like it!
+      <br><br>would you like to start? :</h3>
+
+    <div id="buttonFlex">
+      <a href="./list/simple_list.html"><button id="buttonList" class="buttons"> create your list </button></a> <br> <br>
+      <a href="./jurnal page/jurnal.html"><button id="buttonPage" class="buttons"> create your jurnal </button></a> <br>
+      <br>
+      <a href="./motivation page/motivation.html"> <button id="buttonAPI" class="buttons"> need some motivation?
+        </button> </a>
+    </div>
+
   </div>
 
-</div>
 
-
-<script src="/main page/orgenizer.js"></script>
+  <script src="./main page/orgenizer.js"></script>
 </body>
+
 </html>
