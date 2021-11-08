@@ -1,0 +1,108 @@
+body{
+  background-image:linear-gradient(to top right, rgba(245, 141, 228,0.3), rgba(76, 202, 207, 0.4));
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: block;
+}
+
+#title{
+  text-align: center;
+  font-size: 500%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;}
+
+
+.main-discription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  #description
+  {
+    font-family: 'Shadows Into Light', sans-serif;
+  }
+
+  
+  #buttonFlex
+{
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+  .buttons{
+    margin: 0 10px 0 0;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    width: 50%;
+    background-color: rgba(184, 55, 148, 0.267);
+  }
+
+  .buttons:hover
+  {
+    cursor: pointer;
+    background-color: rgba(184, 55, 148, 0.514);
+  }
+
+  .buttons:active{
+    background-color: rgba(184, 55, 148, 0.685);
+  }
+
+
+
+
+
+.buttOpenSB
+{
+  margin: 0px 160px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(122, 121, 121);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.SideBar
+{
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 20px;
+  animation-name:openSideBar;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.SideBar a
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.SideBar a:hover
+{
+  color: rgb(187, 184, 184);
+}
+
+@keyframes openSideBar
+{
+  0%{ width: 0px; 
+  }
+  100%
+  {
+    width: 160px;
+  }
+
+}
+

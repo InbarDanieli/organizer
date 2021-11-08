@@ -1,0 +1,17 @@
+body {
+background-color: rgba(127, 255, 212, 0.4);
+}
+
+hr {
+  border-style: outset
+}
+
+#description{
+  color: rgb(180, 42, 42);
+}
+
+#HomePage{
+  text-decoration: none;
+  font-style: italic;
+  color: rgba(9, 9, 238, 0.925);
+}
