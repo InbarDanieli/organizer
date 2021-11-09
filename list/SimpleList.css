@@ -16,15 +16,6 @@ height:50px;
   width: 70px;
 }
 
-#Pages
-{
-border: none;
-background: none;
-font-size: 25px;
-float: right;
-margin: 5px 10px 0px 0px;
-}
-
 
 body
 {
@@ -70,6 +61,8 @@ body
   margin-left: 30px;
 }
 
+
+/* switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -122,4 +115,63 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+
+/* sidebar */
+#sidebar
+{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: width 0.5s ease;
+
+}
+#sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+#sidebar a:hover {
+  color: #f1f1f1;
+}
+
+#OpenSB
+{
+  position: fixed;
+  top: 0;
+  transition: right 0.5s ease;
+  font-size: 25px;
+  cursor: pointer;
+  width: 35px;
+  background: none;
+  border: none;
+  margin: 5px 10px 0px 0px;
+  padding: 0px;
+}
+
+.close-sideB{
+  width: 0;
+}
+
+.open-sideB
+{
+  width: 160px;
+}
+
+.close{
+  right: 0px;
+}
+
+.open{
+  right: 160px;
 }
