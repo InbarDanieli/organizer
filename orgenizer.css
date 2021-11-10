@@ -54,56 +54,65 @@ body{
 
 
 
-
-
-.buttOpenSB
+#header
 {
-  margin: 0px 160px;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: rgb(122, 121, 121);
-  color: white;
-  padding: 10px 15px;
-  border: none;
+height:50px;
 }
 
-.SideBar
+
+/* sidebar */
+#sidebar
 {
-  height: 100%;
-  width: 160px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: width 0.5s ease;
+
+}
+#sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+#sidebar a:hover {
+  color: #f1f1f1;
+}
+
+#OpenSB
+{
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: #111;
-  padding-top: 20px;
-  animation-name:openSideBar;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  transition: right 0.5s ease;
+  font-size: 30px;
+  cursor: pointer;
+  width: 40px;
+  background: none;
+  border: none;
+  margin: 15px 10px 0px 0px;
+  padding: 0px;
 }
 
-.SideBar a
+.close-sideB{
+  width: 0;
+}
+
+.open-sideB
 {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 20px 15px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+  width: 200px;
 }
 
-.SideBar a:hover
-{
-  color: rgb(187, 184, 184);
+.close{
+  right: 0px;
 }
 
-@keyframes openSideBar
-{
-  0%{ width: 0px; 
-  }
-  100%
-  {
-    width: 160px;
-  }
-
+.open{
+  right: 200px;
 }
-

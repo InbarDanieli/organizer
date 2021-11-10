@@ -11,9 +11,10 @@
   <header id="header">
    <a href="../index.html"><img id = "homeIcon" src="homeIcon.png" alt="home page"></a>
    <div id ="sidebar" class="close-sideB">
+    <a href="javascript:void(0)" style="font-size: 35px; padding-top: 0px;" onclick="changing()">×</a>
+    <a href="simple_list.html">list</a>
     <a href="../jurnal page/jurnal.html">Jurnal</a>
     <a href="../motivation page/motivation.html">Motivation</a>
-    <a href="#">three</a>
     </div>
    <button id="OpenSB" class="close" onclick = "changing()">☰</button>
   </header>
@@ -21,20 +22,19 @@
 
  <main> 
    <div id="description">
-  <h2>your own simple List</h2>
-  <p class="text">if you want to delete item of your list, just mark it and click on the delete button</p>
   <p id="warningtext"></p>
 </div>
 
-  <input id="input" type="text" placeholder="list...">
-  <button id="ButtonAdder">add to your list</button>
-  <button onclick="deleteItems()" id="buttonDel">delete items</button>
+<div id="AddItemsElements">
+  <input id="input" type="text" placeholder="add item...">
+  <button id="ButtonAdder" title="add item to your list">+</button>
+  <button onclick="deleteItems()" id="buttonDel"><img id="Icon" width="30px" src="trash-alt-regular.svg" alt="trash can"></button>
 
   <label class="switch">
     <input type="checkbox" id="OnOffButt" checked />
     <span class="slider round"></span>
   </label>
-
+</div>
   <ul id="List" style="list-style-type: none; padding-left: 0px;">
   </ul>
 

@@ -1,11 +1,24 @@
+body
+{
+  background-color: rgba(156, 179, 214,0.7);
+}
+
+#AddItemsElements
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #header
 {
 height:50px;
 }
 
+ 
 #homeIcon{
- width: 65px;
- margin-top: 8px;
+ width: 78px;
+ margin-top: 4px;
 }
 
 #homeIcon:hover
@@ -16,15 +29,15 @@ height:50px;
   width: 70px;
 }
 
-
-body
+@keyframes HomeIcon
 {
-  background-color: rgba(156, 179, 214,0.7);
+  0% {width: 78px;}
+  100% {width: 70px;}
 }
 
-#description
+#input
 {
-  height: 120px;
+  font-size: 20px;
 }
 
 .changeToDel
@@ -32,14 +45,12 @@ body
   text-decoration-line: line-through;
 }
 
-
-.text
+#description
 {
-  margin-bottom: 20px;
+  height: 50px;
 }
 
 #warning{
-
   animation: Warning 0.3s linear;
 }
 
@@ -50,15 +61,22 @@ body
   100% {font-size: auto;}
 }
 
-@keyframes HomeIcon
+#ButtonAdder
 {
-  0% {width: 65px;}
-  100% {width: 70px;}
+  font-size: 20px;
 }
 
 #buttonDel
 {
+  border: none;
+  background: none;
   margin-left: 30px;
+}
+
+#buttonDel:hover
+{
+  cursor: pointer;
+  filter: opacity(0.4) drop-shadow(0 0 0 gray);
 }
 
 
@@ -66,8 +84,8 @@ body
 .switch {
   position: relative;
   display: inline-block;
-  width: 55px;
-  height: 26px;
+  width: 60px;
+  height: 30px;
 }
 
 .slider {
@@ -85,8 +103,8 @@ body
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 22px;
+  width: 23px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -150,12 +168,12 @@ input:checked + .slider:before {
   position: fixed;
   top: 0;
   transition: right 0.5s ease;
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
-  width: 35px;
+  width: 40px;
   background: none;
   border: none;
-  margin: 5px 10px 0px 0px;
+  margin: 15px 10px 0px 0px;
   padding: 0px;
 }
 
@@ -165,7 +183,7 @@ input:checked + .slider:before {
 
 .open-sideB
 {
-  width: 160px;
+  width: 200px;
 }
 
 .close{
@@ -173,5 +191,5 @@ input:checked + .slider:before {
 }
 
 .open{
-  right: 160px;
+  right: 200px;
 }

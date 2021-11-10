@@ -13,12 +13,16 @@
 </head>
 
 <body>
-  <button class="buttOpenSB" onclick="closeNav()">☰ </button>
-  <div class="SideBar" >
-    <a class="Link" href="./list/simple_list.html">list</a>
-    <a class="Link" href="./motivation page/motivation.html">motivation</a>
-    <a class="Link" href="./jurnal page/jurnal.html">jurnal</a>
-  </div>
+  <header id="header">
+    <div id ="sidebar" class="close-sideB">
+     <a href="javascript:void(0)" style="font-size: 35px; padding-top: 0px;" onclick="changing()">×</a>
+     <a href="list/simple_list.html">list</a>
+     <a href="../jurnal page/jurnal.html">Jurnal</a>
+     <a href="../motivation page/motivation.html">Motivation</a>
+     </div>
+    <button id="OpenSB" class="close" onclick = "changing()">☰</button>
+   </header>
+   <hr >
 
   <h1 id="title">orgenizer</h1>
   <div class="main-discription">
@@ -37,7 +41,7 @@
   </div>
 
 
-  <script src="./main page/orgenizer.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

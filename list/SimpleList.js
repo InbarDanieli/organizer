@@ -15,7 +15,7 @@ const List = document.getElementById("List");
 /** @type {HTMLInputElement} */
 const input = document.getElementById("input");
 
-
+// sidebar
 const site = document.getElementById("sidebar")
 const button = document.getElementById("OpenSB")
 
@@ -27,7 +27,6 @@ function changing() {
     button.classList.remove('close')
     button.classList.add('open')
   }
-
   else {
     site.classList.remove('open-sideB')
     site.classList.add('close-sideB')
@@ -38,6 +37,7 @@ function changing() {
 }
 
 
+//ceate the list
 
 function CreateList() {
   if (input.value === "") { return confirm('cannot add blank item') }
@@ -58,6 +58,7 @@ function CreateItem(list) {
 
   const par = document.createElement('p');
   par.style.display = "inline"
+  par.style.fontSize = "20px"
   par.innerHTML = `${input.value}`;
   list.appendChild(par);
   input.value = "";
