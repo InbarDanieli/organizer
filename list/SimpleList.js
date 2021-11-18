@@ -117,6 +117,7 @@ let DisAnble = true
     if (DisAnble === true) {
     Textoutput.value = e.options[e.selectedIndex].text;
     CreateList(Textoutput);
+    e.selectedIndex =  0;
     }
   }
 
@@ -138,7 +139,6 @@ inputDD.addEventListener("keypress", (k) => {
     AddItem()
   }
 })
-
 
 
 function DelMultypulItems() {
