@@ -1,12 +1,12 @@
 ### orginazer
 in the web we have multiple options:
 
-##:page_with_curl:	to-do list
+## :page_with_curl:	to-do list
 
-##:ledger:	jurnal
+## :ledger:	jurnal
 **in progress - still in the begining**
 
-##:cat2:	motivation images
+## :cat2:	motivation images
 to make you smile :blush:	(i apologize to the people who don't like cats)
 **in progress - still in the begining**
 
