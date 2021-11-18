@@ -9,39 +9,74 @@
 
 <body>
   <header id="header">
-   <a href="../index.html"><img id = "homeIcon" src="homeIcon.png" alt="home page"></a>
-   <div id ="sidebar" class="close-sideB">
-    <a href="javascript:void(0)" style="font-size: 35px; padding-top: 0px;" onclick="changing()">×</a>
-    <a href="simple_list.html">list</a>
-    <a href="../jurnal page/jurnal.html">Jurnal</a>
-    <a href="../motivation page/motivation.html">Motivation</a>
+    <a href="../index.html"><img id="homeIcon" src="homeIcon.png" alt="home page"></a>
+    <div id="sidebar" class="close-sideB">
+      <a href="javascript:void(0)" style="font-size: 35px; padding-top: 0px;" onclick="changing()">×</a>
+      <a href="simple_list.html">list</a>
+      <a href="../jurnal page/jurnal.html">Jurnal</a>
+      <a href="../motivation page/motivation.html">Motivation</a>
     </div>
-   <button id="OpenSB" class="close" onclick = "changing()">☰</button>
+    <button id="OpenSB" class="close" onclick="changing()">☰</button>
   </header>
-  <hr >
+  <hr>
 
- <main> 
-   <div id="description">
-  <p id="warningtext"></p>
-</div>
+  <main>
+    <div id="description">
+      <p id="warningtext"></p>
+    </div>
 
-<div id="AddItemsElements">
-  <input id="input" type="text" placeholder="add item...">
-  <button id="ButtonAdder" title="add item to your list">+</button>
-  <button onclick="deleteItems()" id="buttonDel"><img id="Icon" width="30px" src="trash-alt-regular.svg" alt="trash can"></button>
+    <div id="AddItemsElements">
+      <input id="input" type="text" placeholder="add item...">
+      <button id="ButtonAdder" title="add item to your list">+</button>
+      <button onclick="deleteItems()" id="buttonDel"><img id="Icon" width="30px" src="trash-alt-regular.svg"
+          alt="trash can"></button>
 
-  <label class="switch">
-    <input type="checkbox" id="OnOffButt" checked />
-    <span class="slider round"></span>
-  </label>
-</div>
-  <ul id="List" style="list-style-type: none; padding-left: 0px;">
-  </ul>
+      <label class="switch">
+        <input type="checkbox" id="OnOffButt" checked />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <ul id="List" style="list-style-type: none; padding-left: 0px;">
+    </ul>
+
+
+    <!-- drop down -->
+    <div id="dropdown">
+      <div disabled id="NonEditArea">
+        <input id="inputDropDown" type="text">
+        <button id="AddItemButt" onclick="AddItem()">+</button>
+        <br>
+        <p id="output"></p>
+      </div>
+
+      <div id="CenterArea">
+        <div id=EditArea>
+          <form style="display: inline;" id="FormId">
+            <select name="items" id="items" onchange="show()">
+              <option style="display: none;" value="" disabled selected>Select your option</option>
+              <option value="1">item1</option>
+              <option value="2">item 2</option>
+              <option value="3">item 3</option>
+              <option value="4">item 4</option>
+            </select>
+          </form>
+          <button id="EditButton" onclick="EditItems()">edit</button>
+          <div class="tooltip" id="ToolTip">help
+            <span class="tooltiptext"><b style="margin-left: 25px;">to select multiple items:</b>
+              <hr>
+              <ol>
+                <li>ctrl + click on items</li>
+                <li>hold left click on the mouse + drag on the items</li>
+              </ol>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="SimpleList.js"></script>
   <link rel="stylesheet" href="SimpleList.css">
-
-</main>
 
 </body>
 
