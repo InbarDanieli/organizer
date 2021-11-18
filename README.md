@@ -1,7 +1,7 @@
 ### orginazer
 in the web we have multiple options:
 
-##page_with_curl	to-do list
+##:page_with_curl:	to-do list
 
 ##:ledger:	jurnal
 **in progress - still in the begining**
