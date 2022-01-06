@@ -211,12 +211,12 @@ body.Background
 background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* #dropdown
+#dropdown
 {
 position: fixed;
 top: 150px;
-right: 800px;
-} */
+right: 300px;
+}
 
 #EditArea
 {
